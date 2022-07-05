@@ -6,8 +6,6 @@ __Pcard__ позволяет вводить данные банковской к
 - [Макет в Figma](https://www.figma.com/file/Dfi3l7BcZbXCcTtflPUvgH/Pcard?node-id=0%3A1)
 
 
-![gitCover](https://user-images.githubusercontent.com/52402489/177336493-147017b6-562d-4e38-bdd1-ebeda54693df.png)
-
 ![](images/intro.png)
 
 ## Возможности
