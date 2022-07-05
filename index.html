@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardInputForm</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Оплата</h1>
+
+        <p>Введите данные карты:</p>
+
+        <div class="pcard card_1">
+            <div class="pcard__sides">
+                <div class="pcard__side1">
+                    <div class="pcard__row">
+                        <label for="number">Номер</label>
+                        <input type="text" data-el="number" name="number" id="number" data-el="number" tabindex="1"
+                            autocomplete="off" inputmode="numeric">
+                    </div>
+                    <div class="pcard__row">
+                        <label for="number">Срок действия</label>
+                        <div class="pcard__row-expired">
+                            <input type="text" data-el="month" name="month" id="month" data-el="month" maxlength="2"
+                                tabindex="2" autocomplete="off" inputmode="numeric">
+                            <span>/</span>
+                            <input type="text" data-el="year" name="year" id="year" data-el="year" maxlength="2"
+                                tabindex="3" autocomplete="off" inputmode="numeric">
+                        </div>
+                    </div>
+                    <div class="pcard__row">
+                        <label for="name">Владелец</label>
+                        <input type="text" data-el="name" name="name" id="name" data-el="name" tabindex="4"
+                            autocomplete="off">
+                    </div>
+                </div>
+                <div class="pcard__side2">
+                    <div class="pcard__line"></div>
+                    <div class="pcard__row-cvv">
+                        <label for="cvv">CVV/CVC</label>
+                        <input type="text" data-el="cvv" name="cvv" id="cvv" data-el="cvv" maxlength="3" tabindex="5"
+                            autocomplete="off" inputmode="numeric">
+                    </div>
+                </div>
+            </div>
+            <div class="pcard__button-row">
+                <button disabled>Оплатить</button>
+            </div>
+        </div>
+
+        <!--json-данные карты (для демонстрации)-->
+        <div id="info" style="margin-top: 16px; padding: 8px"></div>
+
+    </div>
+
+
+    <script src="./scripts/app.js" type="module"></script>
+</body>
+
+</html>
